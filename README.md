@@ -35,8 +35,8 @@ Usage::
 Todo
 ====
 
-#testing
-#work on additional parameters
+testing
+work on additional parameters
 
 Bugs
 ====
