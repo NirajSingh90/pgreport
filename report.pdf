@@ -1,0 +1,460 @@
+%PDF-1.4
+1 0 obj
+<<
+/Creator (PyText2Pdf Version 1.1.1 By Anand B Pillai )
+/CreationDate (D:20140324160337)
+/Producer (PyText2Pdf Version 1.1.1(\251 Free Software Foundation, 2004))
+/Title (report)
+>>
+endobj
+2 0 obj
+<<
+/Type /Catalog
+/Pages 3 0 R
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font >>
+>>
+endobj
+5 0 obj
+<<
+  /Font << /F1 4 0 R >>
+  /ProcSet [ /PDF /Text ]
+>>
+endobj
+6 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 7 0 R
+>>
+endobj
+7 0 obj
+<<
+/Length 8 0 R
+>>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 50 752 Tm
+12 TL
+(----------------------------------------------------------------------)'
+(                       POSTGRESQL STATIC ANALYSER REPORT)'
+(----------------------------------------------------------------------)'
+()'
+(PostgreSQL Version       =  9.1.3)'
+(Postgesql.conf file path =  /etc/postgresql/9.1/main/postgresql.conf)'
+(Current Time             =  16:03:23.646557)'
+(Current Date             =  2014-03-24)'
+(TestVersion              =  alpha v1.0)'
+()'
+(----------------------------------------------------------------------)'
+(OS Configurations)'
+(----------------------------------------------------------------------)'
+()'
+(operating system name           :  Linux)'
+()'
+(kernel release                  :  3.8.0-29-generic)'
+()'
+(os instruction length           :  x86_64)'
+()'
+(Processor type                  :  x86_64)'
+()'
+(----------------------------------------------------------------------)'
+(Memory Info            All values in KB)'
+(----------------------------------------------------------------------)'
+()'
+(Free RAM                        :  700240)'
+(Total OS Cached                 :  1812792)'
+(Cached Mem                      :  304880)'
+(Total RAM+SWAP                  :  2172748)'
+(Free SWAP                       :  1472508)'
+(Total SWAP                      :  1472508)'
+(Total RAM                       :  1436572)'
+(Buffers                         :  35404)'
+(----------------------------------------------------------------------)'
+(kernel resources)'
+(----------------------------------------------------------------------)'
+()'
+(SEMMNS                          :  32000)'
+(SHMSEG                          :  4096)'
+(SHMMIN                          :  1)'
+(SEMVMX                          :  32767)'
+(SHMMAX                          :  8388608)'
+(SEMMNI                          :  128)'
+(SHMALL                          :  8388608)'
+(----------------------------------------------------------------------)'
+(CPU info)'
+(----------------------------------------------------------------------)'
+()'
+(number of cpu                   :  1)'
+(cpu speed                       :  2284.791)'
+(cpu avg                         :  2284.791)'
+(----------------------------------------------------------------------)'
+(RAID info)'
+(----------------------------------------------------------------------)'
+()'
+(SW RAID numbers of disks        :  0)'
+(RAID levels supported by kernel  :  ['linear', 'multipath', 'raid0', 'raid1', 'r)'
+(aid6', 'raid5', 'raid4', 'raid10'])'
+(----------------------------------------------------------------------)'
+ET
+endstream
+endobj
+8 0 obj
+2609
+endobj
+9 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 10 0 R
+>>
+endobj
+10 0 obj
+<<
+/Length 11 0 R
+>>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 50 752 Tm
+12 TL
+(Disks and partitions)'
+(----------------------------------------------------------------------)'
+()'
+(/dev/sda5         :  1472512   :  Linux            :  NONE)'
+(/dev/sda1         :  13828095  :  Linux            :  Installation Part)'
+(/dev/sda2         :  1472513   :  Extended         :  NONE)'
+(/dev/sda          :  8589MB    :  Disk             :  NONE)'
+(----------------------------------------------------------------------)'
+(File System information)'
+(----------------------------------------------------------------------)'
+()'
+(BE_IMP                          :  vboxsf)'
+(/dev/sr0                        :  iso9660)'
+(/dev/sda1                       :  ext4)'
+(udev                            :  devtmpfs)'
+(----------------------------------------------------------------------)'
+(Disk Read speed)'
+(----------------------------------------------------------------------)'
+()'
+(                                :  cached reads           disk reads)'
+(/dev/sda                        :  ['5557.06 MB/sec']    ['61.48 MB/sec'])'
+()'
+(----------------------------------------------------------------------)'
+(Scheduler information)'
+(----------------------------------------------------------------------)'
+()'
+(/dev/sda                        :  noop [deadline] cfq)'
+()'
+(######################################################################)'
+()'
+(                    PostgreSQL Parameters)'
+()'
+(Memory units are in KB)'
+(shb            :   shared_buffer)'
+(wm             :   work_memory)'
+(temp           :   temp_file_limit)'
+(fsync          :   fsync)'
+(sy_c           :   synchronous_commit)'
+(wal_b          :   wal_buffers)'
+(full_pgw       :   full_page_writes)'
+(chk            :   checkpoint_segments)'
+(chkTime        :   checkpoint_timeout)'
+(chkComplete    :   checkpoint_completion_target)'
+()'
+(######################################################################)'
+()'
+(----------------------------------------------------------------------)'
+(#shared_memory)'
+(----------------------------------------------------------------------)'
+()'
+(>>shared_buffer)'
+()'
+(shb:Current_Value                       =  24 MB)'
+(shb:Recommended_Value                   =  561.1609375 MB)'
+(shb:Upper_limit                         =  8GB)'
+(shb:Lower_Limit                         =  128 KB)'
+(#shb:Upper limit 8GB)'
+(#shb:No need to change SHMMAX value)'
+()'
+()'
+ET
+endstream
+endobj
+11 0 obj
+2425
+endobj
+12 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 13 0 R
+>>
+endobj
+13 0 obj
+<<
+/Length 14 0 R
+>>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 50 752 Tm
+12 TL
+(>>Work_memory)'
+()'
+()'
+(wm:Default_Value                        =  1MB)'
+(wm:Recommended_value                    =  5431 KB)'
+(wm:Lower_Limit                          =  1MB)'
+()'
+(>>temp_file_limit)'
+()'
+(temp:Only Supported by PostgreSQL > 9.2)'
+()'
+()'
+(----------------------------------------------------------------------)'
+(##WRITE AHEAD LOG)'
+(----------------------------------------------------------------------)'
+()'
+(>>fsync)'
+()'
+(fync:Current_Value                      =  ON)'
+(fync:Recommended_Value                  =  ON)'
+()'
+(>>synchronous_commit)'
+()'
+(sy_c:Current_Value                      =  ON)'
+(sy_c:Recommended_Value                  =  ON)'
+(#sy_c:Value depends directly on 'fsync')'
+()'
+(>>wal_buffers)'
+()'
+(wal_b:Current_value                     =  -1)'
+(wal_b:Recommended_value                 =  16 MB)'
+(wal_b:Minimum_value                     =  32kB)'
+(#wal_b:For heavy load value should be in between 1MB - 16 MB)'
+()'
+(>>full_page_writes)'
+()'
+(full_pgw:Current_value                  =  ON)'
+(full_pgw:Recommended_value              =  ON)'
+(#full_pgw:Recovers from partial page writes and Improve IO performance)'
+()'
+(----------------------------------------------------------------------)'
+(##CHECKPOINTS)'
+(----------------------------------------------------------------------)'
+()'
+(>>checkpoint_segments)'
+()'
+(chk:default_Value                       =  3)'
+(chk:Recommended_value                   =  35)'
+(chk:Memory Req for Checkpoints * WAL_BUFFERS ==  574628.8)'
+(#chk:[ For bulk load  :Set 128 \(2GB\) to 256 \(4GB\))'
+(For OLAP load  :Set 10 \(160MB\) to 64 \(1GB\))'
+(  ])'
+()'
+(>>checkpoint_timeout)'
+()'
+(chkTime:Current_value                   =  5min)'
+(chkTime:Recommended_Value               =  5 min to 10min)'
+(#chkTime: [ Checkpoint_completion_target should be in range 0.6 to 0.9 )'
+(Increase in value in check_point_completion_target will reduce I/O load ])'
+()'
+ET
+endstream
+endobj
+14 0 obj
+1975
+endobj
+15 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 16 0 R
+>>
+endobj
+16 0 obj
+<<
+/Length 17 0 R
+>>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 50 752 Tm
+12 TL
+(>>checkpoint_completion_target)'
+()'
+(chk_comp:Current_Value                  =  0.5)'
+(chk_comp:Recommended_Value              =  0.9)'
+()'
+(----------------------------------------------------------------------)'
+(DISK RECOMMENDATION)'
+(----------------------------------------------------------------------)'
+()'
+(OS installation disk partition          =  /dev/sda)'
+(Remaining disks                         =  [])'
+(PGXLOG space                            =  1 MB)'
+(OS + WAL + TEMP + DB ON DISK            =  /dev/sda)'
+()'
+(----------------------------------------------------------------------)'
+(RAID RECOMMENDATIONS)'
+(----------------------------------------------------------------------)'
+()'
+(Function            Cache Flushes        Access Patterns        RAID LEVELS)'
+()'
+(Operating System    Rare                 mix of seq and random       1     )'
+(Database            Regularly            mix of seq and random       10    )'
+(WAL                 Constant             Sequential                  1     )'
+(Temp Files          Never                More random as clients inc   None  )'
+()'
+()'
+()'
+(----------------------------------------------------------------------)'
+(SYSTEM TUNING RECOMMENDATIONS)'
+(----------------------------------------------------------------------)'
+()'
+(>>READ AHEAD VALUE)'
+()'
+(Current Value                           =  256)'
+(Recommended Value                       =  4096)'
+(Comments                                =  )'
+(For postgres performance improvement set value to 4096 ,for better seeks)'
+(set it using "$sudo blockdev --getra /dev/sda")'
+()'
+()'
+(>>File_access_time)'
+(Current_Values For Disks)'
+(/dev/sda1                               =  1)'
+(Comments                                =  [])'
+()'
+(>>Overcommit Behavior)'
+()'
+(Current Value                           =  0)'
+(Recommended Value                       =  0)'
+(Comments                                =  ['$syssctl vm.overcommit_memory=2'])'
+()'
+(>>swapiness)'
+()'
+(Current_Value                           =  60)'
+(Recommended_Value                       =  0)'
+(Comments                                =  ['$sysctl vm.swappiness = 0'])'
+()'
+(>>Write_Cache_Sizing)'
+()'
+(recomm_dirty_ratio                      =  10)'
+ET
+endstream
+endobj
+17 0 obj
+2287
+endobj
+18 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 19 0 R
+>>
+endobj
+19 0 obj
+<<
+/Length 20 0 R
+>>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 50 752 Tm
+12 TL
+(current_dirty_ratio                     =  60)'
+()'
+(recomm_dirty_background_ratio           =  5)'
+(current_dirty_background_ratio          =  40)'
+()'
+()'
+(Comments                                =  ['$sysctl vm.dirty_background_ratio =)'
+( 5', '$sysctl vm.dirty_ratio = 10'])'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+ET
+endstream
+endobj
+20 0 obj
+529
+endobj
+3 0 obj
+<<
+/Type /Pages
+/Count 5
+/MediaBox [ 0 0 612 792 ]
+/Kids [ 6 0 R 9 0 R 12 0 R 15 0 R 18 0 R ]
+>>
+endobj
+xref
+0 21
+0000000000 65535 f 0000000009 00000 n 0000000208 00000 n 0000011039 00000 n 0000000257 00000 n 0000000365 00000 n 0000000436 00000 n 0000000516 00000 n 0000003177 00000 n 0000003197 00000 n 0000003278 00000 n 0000005757 00000 n 0000005778 00000 n 0000005860 00000 n 0000007889 00000 n 0000007910 00000 n 0000007992 00000 n 0000010333 00000 n 0000010354 00000 n 0000010436 00000 n 0000011019 00000 n trailer
+<<
+/Size 21
+/Root 2 0 R
+/Info 1 0 R
+>>
+startxref
+11151
+%%EOF

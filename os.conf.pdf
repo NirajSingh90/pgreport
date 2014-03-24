@@ -1,0 +1,211 @@
+%PDF-1.4
+1 0 obj
+<<
+/Creator (PyText2Pdf Version 1.1.1 By Anand B Pillai )
+/CreationDate (D:20140319135241)
+/Producer (PyText2Pdf Version 1.1.1(\251 Free Software Foundation, 2004))
+/Title (os.conf)
+>>
+endobj
+2 0 obj
+<<
+/Type /Catalog
+/Pages 3 0 R
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font >>
+>>
+endobj
+5 0 obj
+<<
+  /Font << /F1 4 0 R >>
+  /ProcSet [ /PDF /Text ]
+>>
+endobj
+6 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 7 0 R
+>>
+endobj
+7 0 obj
+<<
+/Length 8 0 R
+>>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 50 752 Tm
+12 TL
+(----------------------------------------------------------------------)'
+(OS Config)'
+(----------------------------------------------------------------------)'
+()'
+(operating system name           :  Linux)'
+()'
+(kernel release                  :  3.8.0-29-generic)'
+()'
+(os instruction length           :  x86_64)'
+()'
+(Processor type                  :  x86_64)'
+()'
+(----------------------------------------------------------------------)'
+(Memory Info)'
+(----------------------------------------------------------------------)'
+()'
+(Free RAM                        :  712052)'
+(Total OS Cached                 :  1803868)'
+(Cached Mem                      :  299700)'
+(Total RAM+SWAP                  :  2184560)'
+(Free SWAP                       :  1472508)'
+(Total SWAP                      :  1472508)'
+(Total RAM                       :  1436572)'
+(Buffers                         :  31660)'
+(----------------------------------------------------------------------)'
+(kernel resources)'
+(----------------------------------------------------------------------)'
+()'
+(SEMMNS                          :  32000)'
+(SHMSEG                          :  4096)'
+(SHMMIN                          :  1)'
+(SEMVMX                          :  32767)'
+(SHMMAX                          :  8388608)'
+(SEMMNI                          :  128)'
+(SHMALL                          :  8388608)'
+(----------------------------------------------------------------------)'
+(CPU info)'
+(----------------------------------------------------------------------)'
+()'
+(number of cpu                   :  1)'
+(cpu speed                       :  2471.120)'
+(cpu avg                         :  2471.12)'
+(----------------------------------------------------------------------)'
+(RAID info)'
+(----------------------------------------------------------------------)'
+()'
+(SW RAID numbers of disks        :  0)'
+(RAID levels supported by kernel  :  ['linear', 'multipath', 'raid0', 'raid1', 'r)'
+(aid6', 'raid5', 'raid4', 'raid10'])'
+(----------------------------------------------------------------------)'
+(Disks and partitions)'
+(----------------------------------------------------------------------)'
+()'
+(/dev/sda5                       :  1472512         :Linux               :none)'
+(/dev/sda1                       :  13828095         :Linux               :instal)'
+(lation partition)'
+(/dev/sda2                       :  1472513         :Extended               :none)'
+()'
+(/dev/sda                        :  8589mb          :Disk             :none)'
+(----------------------------------------------------------------------)'
+ET
+endstream
+endobj
+8 0 obj
+2643
+endobj
+9 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 10 0 R
+>>
+endobj
+10 0 obj
+<<
+/Length 11 0 R
+>>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 50 752 Tm
+12 TL
+(------------------)'
+(File System information)'
+(----------------------------------------------------------------------)'
+()'
+(BE_IMP                          :  vboxsf)'
+(/dev/sr0                        :  iso9660)'
+(/dev/sda1                       :  ext4)'
+(udev                            :  devtmpfs)'
+(----------------------------------------------------------------------)'
+(Disk Read speed)'
+(----------------------------------------------------------------------)'
+()'
+(                                :  cached reads           disk reads)'
+(/dev/sda                        :  ['5735.95 MB/sec']    ['68.90 MB/sec'])'
+()'
+(----------------------------------------------------------------------)'
+(Scheduler information)'
+(----------------------------------------------------------------------)'
+()'
+(/dev/sda                        :  noop [deadline] cfq)'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+()'
+ET
+endstream
+endobj
+11 0 obj
+1067
+endobj
+3 0 obj
+<<
+/Type /Pages
+/Count 2
+/MediaBox [ 0 0 612 792 ]
+/Kids [ 6 0 R 9 0 R ]
+>>
+endobj
+xref
+0 12
+0000000000 65535 f 0000000009 00000 n 0000000209 00000 n 0000004455 00000 n 0000000258 00000 n 0000000366 00000 n 0000000437 00000 n 0000000517 00000 n 0000003212 00000 n 0000003232 00000 n 0000003313 00000 n 0000004434 00000 n trailer
+<<
+/Size 12
+/Root 2 0 R
+/Info 1 0 R
+>>
+startxref
+4546
+%%EOF
