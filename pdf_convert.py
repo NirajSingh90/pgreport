@@ -52,46 +52,7 @@ ENCODING_STR = """\
 """
 
 
-PROG_HELP = """\
-
-%(progname)s  [options] [filename]
-
-%(progname)s  makes a 7-bit clean PDF file from any input file.
-
-It reads from a named file, and writes the PDF file to a file specified by
-the user, otherwise to a file with '.pdf' appended to the input file.
-
-Author: Anand B Pillai.
-
-Copyright (C) 2003-2004 Free Software Foundation, http://www.fsf.org
-
-There are various options as follows:
-
-  -h\t\tshow this message\n
-  -o/-O\t\tdirect output to this file
-  -f<font>\tuse PostScript <font> (must be in standard 14, default: Courier)
-  -I\t\tuse ISOLatin1Encoding
-  -s<size>\tuse font at given pointsize (default 10) points\n
-  -v<dist>\tuse given line spacing (default 12) points
-  -l<lines>\tlines per page (default 60, determined automatically\n\t\tif unspecified)
-  -c<chars>\tmaximum characters per line (default 80)
-  -t<spaces>\tspaces per tab character (default 4)
-  -F\t\tignore formfeed characters (^L)
-    \t\t(i.e, accept formfeed characters as pagebreaks)\n
-  -A4\t\tuse A4 paper (default Letter)
-  -A3\t\tuse A3 paper (default Letter)
-  -x<width>\tindependent paper width in points
-  -y<height>\tindependent paper height in points
-  -2\t\tformat in 2 columns
-  -L\t\tlandscape mode
-
-Note that where one variable is implied by two options, the second option
-takes precedence for that variable. (e.g. -A4 -y500)
-
-In landscape mode, page width and height are simply swapped over before
-formatting, no matter how or when they were defined.
-"""
-
+PROG_HELP = ""
 
 class pyText2Pdf:
 
