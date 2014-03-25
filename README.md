@@ -23,10 +23,10 @@ and based on system hardware configurations it will output a new pdf file.
 
 Usage::
 
-  python pgreport [$PGDATA/postgresql.conf]
+  python pgreport.py [$PGDATA/postgresql.conf]
   
   for ex:
-  python pgreport /etc/postgresql/9.1/main/postgresql.conf
+  python pgreport.py /etc/postgresql/9.1/main/postgresql.conf
   
   Output:
   [The execution of the program will take some time]
