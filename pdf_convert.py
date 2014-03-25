@@ -270,7 +270,7 @@ class pyText2Pdf:
 
         print 'Input file =>', self._ifile
         print 'Writing pdf file', self._ofile, '...'
-        self.WriteHeader(self._ifile)
+#        self.WriteHeader(self._ifile)
         self.WritePages()
         self.WriteRest()
 
@@ -285,18 +285,18 @@ class pyText2Pdf:
         ws = self.writestr
 
         t=time.localtime()
-        timestr=str(time.strftime("D:%Y%m%d%H%M%S", t))
-        ws("%PDF-1.4\n")
-        self._locations[1] = self._fpos
-        ws("1 0 obj\n")
-        ws("<<\n")
+#        timestr=str(time.strftime("D:%Y%m%d%H%M%S", t))
+#        ws("%PDF-1.4\n")
+#        self._locations[1] = self._fpos
+#        ws("1 0 obj\n")
+#        ws("<<\n")
 
-        buf = "".join(("/Creator (", self._appname, " By Anand B Pillai )\n"))
-        ws(buf)
-        buf = "".join(("/CreationDate (", timestr, ")\n"))
-        ws(buf)
-        buf = "".join(("/Producer (", self._appname, "(\\251 Free Software Foundation, 2004))\n"))
-        ws(buf)
+#        buf = "".join(("/Creator (", self._appname, " By Anand B Pillai )\n"))
+#        ws(buf)
+#        buf = "".join(("/CreationDate (", timestr, ")\n"))
+#        ws(buf)
+#        buf = "".join(("/Producer (", self._appname, "(\\251 Free Software Foundation, 2004))\n"))
+#        ws(buf)
 
         if title:
             buf = "".join(("/Title (", title, ")\n"))
