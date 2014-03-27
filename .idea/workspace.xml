@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="907c9509-079c-4c25-8b05-d2775b85c32b" name="Default" comment="issue #9 added separate directory for source code (src), removed prints statements, changes done in driver program to remove intermediate files.">
+    <list default="true" id="907c9509-079c-4c25-8b05-d2775b85c32b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pgreport.iws" />
@@ -528,7 +528,11 @@
       <created>1395926787121</created>
       <updated>1395926787121</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="issue #9 added separate directory for source code (src), removed prints statements, changes done in driver program to remove intermediate files.">
+      <created>1395926877067</created>
+      <updated>1395926877067</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
