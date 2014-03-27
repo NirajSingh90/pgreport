@@ -1,0 +1,55 @@
+Introduction
+============
+pgreport is a tool for generating statistic analysis of postgresql.conf parameters and kernel parameters for efficient use of your environment. It examines the environment and produces the report showing recommended values for each parameter. Current it works only for standalone machine.It generates output as PDF File. 
+
+
+Download
+--------
+You can download latest version of pgreport at
+https://github.com/Rushikesh005/pgreport/archive/master.zip .
+
+
+Installation
+------------
+You need to have python and postgresql-server installed on your system.
+Extract the downloaded zip to a convenient location.
+Its a python script.There is no need to build/compile pgreport.
+
+
+Usage
+-----
+  python pgreport.py [$PGDATA/postgresql.conf]
+  
+
+  for example:
+  python pgreport.py /etc/postgresql/9.1/main/postgresql.conf
+  
+  Output:
+  The execution of the program will take some time
+  The output i.e; Report.pdf will be generated in the same directory of your program.
+
+
+You can make pgreport.py executable,
+
+$ chmod +x pgreport.py
+$ ./pgreport $PGDATA/postgresql.conf
+
+Todo
+====
+
+Testing.
+Work on additional parameters.
+
+Bugs
+====
+
+Program is under testing phase.If you find any bugs please mail the below concerned person.
+
+Contact
+=======
+ * Initial commits are done in the git repostiory at http://github.com/Rushikesh005/pgreport
+
+If you have any hints, changes or improvements, please contact:
+
+ * Rushikesh Patil rushikesh.patil003@gmail.com
+ * Prashant Pandey prashantpandeyfun10@gmail.com
