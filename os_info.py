@@ -189,12 +189,6 @@ def find_write_speed():
     print t1
     p = subprocess.Popen("rm testfile",shell=True)
     print(str((104857600/(1024*1024)/t1)))
-#    f = open("test.txt","r")
-#    print(f.read())
-#    k =re.findall("(\d+) MB/s",p.stdout.read())
-#    l = p.stdout.read()
-#    print("asjdgskjdhakdhksaj d"+ l)
-#    print(p.stdout.read())
 
 def find_scheduler(disks):
     print(disks)
