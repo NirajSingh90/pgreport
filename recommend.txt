@@ -4,8 +4,8 @@
 
 PostgreSQL Version       =  9.1.3
 Postgesql.conf file path =  /etc/postgresql/9.1/main/postgresql.conf
-Current Time             =  16:03:23.646557
-Current Date             =  2014-03-24
+Current Time             =  15:17:18.583785
+Current Date             =  2014-03-25
 TestVersion              =  alpha v1.0
 
 ----------------------------------------------------------------------
@@ -24,14 +24,14 @@ Processor type                  :  x86_64
 Memory Info            All values in KB
 ----------------------------------------------------------------------
 
-Free RAM                        :  700240
-Total OS Cached                 :  1812792
-Cached Mem                      :  304880
-Total RAM+SWAP                  :  2172748
+Free RAM                        :  695652
+Total OS Cached                 :  1810468
+Cached Mem                      :  306768
+Total RAM+SWAP                  :  2168160
 Free SWAP                       :  1472508
 Total SWAP                      :  1472508
 Total RAM                       :  1436572
-Buffers                         :  35404
+Buffers                         :  31192
 ----------------------------------------------------------------------
 kernel resources
 ----------------------------------------------------------------------
@@ -48,8 +48,8 @@ CPU info
 ----------------------------------------------------------------------
 
 number of cpu                   :  1
-cpu speed                       :  2284.791
-cpu avg                         :  2284.791
+cpu speed                       :  2488.734
+cpu avg                         :  2488.734
 ----------------------------------------------------------------------
 RAID info
 ----------------------------------------------------------------------
@@ -69,6 +69,7 @@ File System information
 ----------------------------------------------------------------------
 
 BE_IMP                          :  vboxsf
+GitHub                          :  vboxsf
 /dev/sr0                        :  iso9660
 /dev/sda1                       :  ext4
 udev                            :  devtmpfs
@@ -77,7 +78,7 @@ Disk Read speed
 ----------------------------------------------------------------------
 
                                 :  cached reads           disk reads
-/dev/sda                        :  ['5557.06 MB/sec']    ['61.48 MB/sec']
+/dev/sda                        :  ['4760.15 MB/sec']    ['62.44 MB/sec']
 
 ----------------------------------------------------------------------
 Scheduler information
@@ -121,7 +122,7 @@ shb:Lower_Limit                         =  128 KB
 
 
 wm:Default_Value                        =  1MB
-wm:Recommended_value                    =  5431 KB
+wm:Recommended_value                    =  5420 KB
 wm:Lower_Limit                          =  1MB
 
 >>temp_file_limit
@@ -237,10 +238,10 @@ Comments                                =  ['$sysctl vm.swappiness = 0']
 >>Write_Cache_Sizing
 
 recomm_dirty_ratio                      =  10
-current_dirty_ratio                     =  60
+current_dirty_ratio                     =  10
 
 recomm_dirty_background_ratio           =  5
-current_dirty_background_ratio          =  40
+current_dirty_background_ratio          =  5
 
 
 Comments                                =  ['$sysctl vm.dirty_background_ratio = 5', '$sysctl vm.dirty_ratio = 10']

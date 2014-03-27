@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="907c9509-079c-4c25-8b05-d2775b85c32b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdf_convert.py" afterPath="$PROJECT_DIR$/pdf_convert.py" />
+    <list default="true" id="907c9509-079c-4c25-8b05-d2775b85c32b" name="Default" comment="header">
+      <change type="DELETED" beforePath="C:\Users\Rushikesh\Documents\GitHub\pgreport\p3.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushikesh\Documents\GitHub\pgreport\speed_test.sh" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.pdf" afterPath="$PROJECT_DIR$/report.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/os.conf" afterPath="$PROJECT_DIR$/os.conf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/os_info.py" afterPath="$PROJECT_DIR$/os_info.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/recommend.txt" afterPath="$PROJECT_DIR$/recommend.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report" afterPath="$PROJECT_DIR$/report" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pgreport.iws" />
@@ -35,13 +41,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pdf_convert.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pdf_convert.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pdf_convert.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="275" column="0" selection-start="8801" selection-end="8801" vertical-scroll-proportion="4.5726795" vertical-offset="2889" max-vertical-offset="11320">
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
+            <state line="305" column="0" selection-start="9480" selection-end="9480" vertical-scroll-proportion="0.0" vertical-offset="9974" max-vertical-offset="11160">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shared_buffer.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/shared_buffer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="90" column="7" selection-start="3633" selection-end="3634" vertical-scroll-proportion="0.516129" vertical-offset="1588" max-vertical-offset="1960">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -49,7 +62,16 @@
       <file leaf-file-name="check_points.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/check_points.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="2740">
+            <state line="18" column="46" selection-start="516" selection-end="517" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2740">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="os_info.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/os_info.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="182" column="76" selection-start="5840" selection-end="5840" vertical-scroll-proportion="0.0" vertical-offset="3476" max-vertical-offset="6860">
               <folding />
             </state>
           </provider>
@@ -79,6 +101,7 @@
       <list>
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/pdf_convert.py" />
+        <option value="$PROJECT_DIR$/os_info.py" />
       </list>
     </option>
   </component>
@@ -161,6 +184,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="839" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -168,6 +192,37 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pgreport" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <module name="pgreport" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
     <configuration default="true" type="tests" factoryName="py.test">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -230,6 +285,9 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
@@ -325,7 +383,15 @@
       <created>1395739653902</created>
       <updated>1395739653902</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="removed header from pdf from issue #2">
+      <created>1395740059286</created>
+      <updated>1395740059286</updated>
+    </task>
+    <task id="LOCAL-00003" summary="updated header issue #2">
+      <created>1395740913178</created>
+      <updated>1395740913178</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -350,24 +416,24 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24981412" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25755286" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -387,12 +453,84 @@
     </option>
     <MESSAGE value="add to ide" />
     <MESSAGE value="removed some junk text from pdf_convert" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed some junk text from pdf_convert" />
+    <MESSAGE value="removed header from pdf from issue #2" />
+    <MESSAGE value="updated header issue #2" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated header issue #2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="1240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdf_convert.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="305" column="0" selection-start="9480" selection-end="9480" vertical-scroll-proportion="0.0" vertical-offset="9974" max-vertical-offset="11160">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared_buffer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="7" selection-start="3633" selection-end="3634" vertical-scroll-proportion="0.0" vertical-offset="1800" max-vertical-offset="1980">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/check_points.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="2740">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work_mem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="17" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0" vertical-offset="200" max-vertical-offset="2440">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="1240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdf_convert.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="305" column="0" selection-start="9480" selection-end="9480" vertical-scroll-proportion="0.0" vertical-offset="9974" max-vertical-offset="11160">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared_buffer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="69" selection-start="1375" selection-end="1375" vertical-scroll-proportion="0.0" vertical-offset="689" max-vertical-offset="1980">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/check_points.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="2760">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work_mem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="17" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0" vertical-offset="200" max-vertical-offset="2440">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="18" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="1240">
@@ -421,13 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/check_points.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2740">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0" vertical-offset="654" max-vertical-offset="1240">
@@ -437,10 +568,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pdf_convert.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="275" column="0" selection-start="8801" selection-end="8801" vertical-scroll-proportion="4.5726795" vertical-offset="2889" max-vertical-offset="11320">
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
+        <state line="305" column="0" selection-start="9480" selection-end="9480" vertical-scroll-proportion="0.0" vertical-offset="9974" max-vertical-offset="11160">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/check_points.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="46" selection-start="516" selection-end="517" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2740">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/os_info.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="182" column="76" selection-start="5840" selection-end="5840" vertical-scroll-proportion="0.0" vertical-offset="3476" max-vertical-offset="6860">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared_buffer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="7" selection-start="3633" selection-end="3634" vertical-scroll-proportion="0.516129" vertical-offset="1588" max-vertical-offset="1960">
+          <folding />
         </state>
       </provider>
     </entry>

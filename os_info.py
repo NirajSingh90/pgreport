@@ -181,7 +181,6 @@ def find_read_speed():
 
 def find_write_speed():
     str1 = "sync ;sudo dd if=/dev/sda of=testfile bs=100k count=1k  && sync"
-    #str1 = "./speed_test.sh"
     import time
     start = time.time()
     p = subprocess.Popen(str1,shell=True,stdout=subprocess.PIPE)

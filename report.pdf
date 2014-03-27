@@ -1,9 +1,6 @@
 %PDF-1.4
 1 0 obj
 <<
-/Creator (PyText2Pdf Version 1.1.1 By Anand B Pillai )
-/CreationDate (D:20140324160337)
-/Producer (PyText2Pdf Version 1.1.1(\251 Free Software Foundation, 2004))
 /Title (report)
 >>
 endobj
@@ -47,8 +44,8 @@ BT
 ()'
 (PostgreSQL Version       =  9.1.3)'
 (Postgesql.conf file path =  /etc/postgresql/9.1/main/postgresql.conf)'
-(Current Time             =  16:03:23.646557)'
-(Current Date             =  2014-03-24)'
+(Current Time             =  15:17:18.583785)'
+(Current Date             =  2014-03-25)'
 (TestVersion              =  alpha v1.0)'
 ()'
 (----------------------------------------------------------------------)'
@@ -67,14 +64,14 @@ BT
 (Memory Info            All values in KB)'
 (----------------------------------------------------------------------)'
 ()'
-(Free RAM                        :  700240)'
-(Total OS Cached                 :  1812792)'
-(Cached Mem                      :  304880)'
-(Total RAM+SWAP                  :  2172748)'
+(Free RAM                        :  695652)'
+(Total OS Cached                 :  1810468)'
+(Cached Mem                      :  306768)'
+(Total RAM+SWAP                  :  2168160)'
 (Free SWAP                       :  1472508)'
 (Total SWAP                      :  1472508)'
 (Total RAM                       :  1436572)'
-(Buffers                         :  35404)'
+(Buffers                         :  31192)'
 (----------------------------------------------------------------------)'
 (kernel resources)'
 (----------------------------------------------------------------------)'
@@ -91,8 +88,8 @@ BT
 (----------------------------------------------------------------------)'
 ()'
 (number of cpu                   :  1)'
-(cpu speed                       :  2284.791)'
-(cpu avg                         :  2284.791)'
+(cpu speed                       :  2488.734)'
+(cpu avg                         :  2488.734)'
 (----------------------------------------------------------------------)'
 (RAID info)'
 (----------------------------------------------------------------------)'
@@ -136,6 +133,7 @@ BT
 (----------------------------------------------------------------------)'
 ()'
 (BE_IMP                          :  vboxsf)'
+(GitHub                          :  vboxsf)'
 (/dev/sr0                        :  iso9660)'
 (/dev/sda1                       :  ext4)'
 (udev                            :  devtmpfs)'
@@ -144,7 +142,7 @@ BT
 (----------------------------------------------------------------------)'
 ()'
 (                                :  cached reads           disk reads)'
-(/dev/sda                        :  ['5557.06 MB/sec']    ['61.48 MB/sec'])'
+(/dev/sda                        :  ['4760.15 MB/sec']    ['62.44 MB/sec'])'
 ()'
 (----------------------------------------------------------------------)'
 (Scheduler information)'
@@ -183,12 +181,11 @@ BT
 (#shb:Upper limit 8GB)'
 (#shb:No need to change SHMMAX value)'
 ()'
-()'
 ET
 endstream
 endobj
 11 0 obj
-2425
+2466
 endobj
 12 0 obj
 <<
@@ -207,11 +204,12 @@ BT
 /F1 10 Tf
 1 0 0 1 50 752 Tm
 12 TL
+()'
 (>>Work_memory)'
 ()'
 ()'
 (wm:Default_Value                        =  1MB)'
-(wm:Recommended_value                    =  5431 KB)'
+(wm:Recommended_value                    =  5420 KB)'
 (wm:Lower_Limit                          =  1MB)'
 ()'
 (>>temp_file_limit)'
@@ -266,7 +264,6 @@ BT
 (chkTime:Recommended_Value               =  5 min to 10min)'
 (#chkTime: [ Checkpoint_completion_target should be in range 0.6 to 0.9 )'
 (Increase in value in check_point_completion_target will reduce I/O load ])'
-()'
 ET
 endstream
 endobj
@@ -290,6 +287,7 @@ BT
 /F1 10 Tf
 1 0 0 1 50 752 Tm
 12 TL
+()'
 (>>checkpoint_completion_target)'
 ()'
 (chk_comp:Current_Value                  =  0.5)'
@@ -349,12 +347,11 @@ BT
 ()'
 (>>Write_Cache_Sizing)'
 ()'
-(recomm_dirty_ratio                      =  10)'
 ET
 endstream
 endobj
 17 0 obj
-2287
+2242
 endobj
 18 0 obj
 <<
@@ -373,10 +370,11 @@ BT
 /F1 10 Tf
 1 0 0 1 50 752 Tm
 12 TL
-(current_dirty_ratio                     =  60)'
+(recomm_dirty_ratio                      =  10)'
+(current_dirty_ratio                     =  10)'
 ()'
 (recomm_dirty_background_ratio           =  5)'
-(current_dirty_background_ratio          =  40)'
+(current_dirty_background_ratio          =  5)'
 ()'
 ()'
 (Comments                                =  ['$sysctl vm.dirty_background_ratio =)'
@@ -432,12 +430,11 @@ BT
 ()'
 ()'
 ()'
-()'
 ET
 endstream
 endobj
 20 0 obj
-529
+573
 endobj
 3 0 obj
 <<
@@ -449,12 +446,12 @@ endobj
 endobj
 xref
 0 21
-0000000000 65535 f 0000000009 00000 n 0000000208 00000 n 0000011039 00000 n 0000000257 00000 n 0000000365 00000 n 0000000436 00000 n 0000000516 00000 n 0000003177 00000 n 0000003197 00000 n 0000003278 00000 n 0000005757 00000 n 0000005778 00000 n 0000005860 00000 n 0000007889 00000 n 0000007910 00000 n 0000007992 00000 n 0000010333 00000 n 0000010354 00000 n 0000010436 00000 n 0000011019 00000 n trailer
+0000000000 65535 f 0000000009 00000 n 0000000046 00000 n 0000010917 00000 n 0000000095 00000 n 0000000203 00000 n 0000000274 00000 n 0000000354 00000 n 0000003015 00000 n 0000003035 00000 n 0000003116 00000 n 0000005636 00000 n 0000005657 00000 n 0000005739 00000 n 0000007768 00000 n 0000007789 00000 n 0000007871 00000 n 0000010167 00000 n 0000010188 00000 n 0000010270 00000 n 0000010897 00000 n trailer
 <<
 /Size 21
 /Root 2 0 R
 /Info 1 0 R
 >>
 startxref
-11151
+11029
 %%EOF
