@@ -1,21 +1,20 @@
 __author__ = 'Rushikesh'
 import subprocess
-import postgre_info
 from datetime import datetime
 import sys
 test_version = "alpha v1.0"
 #setting path os postgres conf file
-#PostgreConf_path = "/etc/postgresql/9.1/main/postgresql.conf"
 try:
     PostgreConf_path = sys.argv[1]
 except:
     PostgreConf_path = "/etc/postgresql/9.1/main/postgresql.conf"
 
-print "PostgresConf file location   :"+PostgreConf_path
+print "postgresql.conf file location   :"+PostgreConf_path
 now_time = datetime.now().time()
 now_date = datetime.now().date()
-pg_version = postgre_info.get_postgre_version()
-
+#pg_version = postgre_info.get_postgre_version()
+p0 = subprocess.Popen("python src/os_info.py",stdout=subprocess.PIPE,shell=True)
+pg_version = p0.stdout.read()
 f = open("recommend.txt","w")
 f.write("-"*70)
 f.write("\n")
@@ -24,7 +23,7 @@ f.write("-"*70)
 f.write("\n\n")
 
 flag = 0
-if postgre_info:
+if pg_version!="":
     f.write("PostgreSQL Version       =  "+pg_version)
     f.write("\n")
     f.write("Postgesql.conf file path =  "+PostgreConf_path)
@@ -41,7 +40,7 @@ f.write("\n")
 f.write("TestVersion              =  "+test_version)
 f.write("\n\n")
 
-p1 = subprocess.Popen("python os_info.py",stdout=subprocess.PIPE,shell=True)
+p1 = subprocess.Popen("python src/os_info.py",stdout=subprocess.PIPE,shell=True)
 p1.wait()
 print p1.stdout.read()
 f_os = open("os.conf","r")
@@ -67,26 +66,26 @@ f.write("\n\n")
 f.close()
 
 if flag == 0:
-    p2 = subprocess.Popen("python shared_buffer.py %s"%PostgreConf_path,stdout=subprocess.PIPE,shell=True)
+    p2 = subprocess.Popen("python src/shared_buffer.py %s"%PostgreConf_path,stdout=subprocess.PIPE,shell=True)
     p2.wait()
     print p2.stdout.read()
 
-    p3 = subprocess.Popen("python work_mem.py %s"%PostgreConf_path,stdout=subprocess.PIPE,shell=True)
+    p3 = subprocess.Popen("python src/work_mem.py %s"%PostgreConf_path,stdout=subprocess.PIPE,shell=True)
     p3.wait()
     print p3.stdout.read()
 
-    p4 = subprocess.Popen("python wal_buffer.py %s"%PostgreConf_path,stdout=subprocess.PIPE,shell=True)
+    p4 = subprocess.Popen("python src/wal_buffer.py %s"%PostgreConf_path,stdout=subprocess.PIPE,shell=True)
     p4.wait()
     print p4.stdout.read()
-    p5 = subprocess.Popen("python check_points.py %s"%PostgreConf_path,stdout=subprocess.PIPE,shell=True)
+    p5 = subprocess.Popen("python src/check_points.py %s"%PostgreConf_path,stdout=subprocess.PIPE,shell=True)
     p5.wait()
     print p5.stdout.read()
 
-    p6 = subprocess.Popen("python file_loc.py %s"%PostgreConf_path,stdout=subprocess.PIPE,shell=True)
+    p6 = subprocess.Popen("python src/file_loc.py %s"%PostgreConf_path,stdout=subprocess.PIPE,shell=True)
     p6.wait()
     print p6.stdout.read()
 
-    p7 = subprocess.Popen("python system_tune.py %s"%PostgreConf_path,stdout=subprocess.PIPE,shell=True)
+    p7 = subprocess.Popen("python src/system_tune.py %s"%PostgreConf_path,stdout=subprocess.PIPE,shell=True)
     p7.wait()
     print p7.stdout.read()
 
@@ -98,5 +97,8 @@ f = open("report","w")
 f.write(file)
 f.close()
 
-p8 = subprocess.Popen("python pdf_convert.py report",stdout=subprocess.PIPE,shell=True)
+p8 = subprocess.Popen("python src/pdf_convert.py report",stdout=subprocess.PIPE,shell=True)
+p8.wait()
+p9 = subprocess.Popen("rm recommend.txt report os.conf",stdout=subprocess.PIPE,shell=True)
+
 print(p8.stdout.read())
