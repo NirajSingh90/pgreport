@@ -31,7 +31,7 @@
       <file leaf-file-name="wal_buffer.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/wal_buffer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="75" selection-start="400" selection-end="400" vertical-scroll-proportion="0.20547946" vertical-offset="240" max-vertical-offset="2400">
+            <state line="19" column="21" selection-start="425" selection-end="425" vertical-scroll-proportion="0.65068495" vertical-offset="0" max-vertical-offset="2400">
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -536,7 +536,11 @@
       <created>1395926903362</created>
       <updated>1395926903362</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="issue #9 added separate directory for source code (src), removed prints statements, changes done in driver program to remove intermediate files.">
+      <created>1395926957140</created>
+      <updated>1395926957140</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -690,9 +694,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="33" selection-start="603" selection-end="603" vertical-scroll-proportion="0.5945946" vertical-offset="0" max-vertical-offset="14280">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/wal_buffer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="75" selection-start="400" selection-end="400" vertical-scroll-proportion="0.20547946" vertical-offset="240" max-vertical-offset="2400">
+        <state line="19" column="21" selection-start="425" selection-end="425" vertical-scroll-proportion="0.65068495" vertical-offset="0" max-vertical-offset="2400">
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
