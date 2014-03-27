@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="907c9509-079c-4c25-8b05-d2775b85c32b" name="Default" comment="issue #9 removed test.txt">
-      <change type="DELETED" beforePath="C:\Users\Rushikesh\Documents\GitHub\pgreport\check_points.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Rushikesh\Documents\GitHub\pgreport\file_loc.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Rushikesh\Documents\GitHub\pgreport\os.conf" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Rushikesh\Documents\GitHub\pgreport\os.conf.pdf" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Rushikesh\Documents\GitHub\pgreport\os_info.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Rushikesh\Documents\GitHub\pgreport\pdf_convert.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Rushikesh\Documents\GitHub\pgreport\postgre_info.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Rushikesh\Documents\GitHub\pgreport\postgresql.conf" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Rushikesh\Documents\GitHub\pgreport\recommend.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Rushikesh\Documents\GitHub\pgreport\report" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Rushikesh\Documents\GitHub\pgreport\shared_buffer.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Rushikesh\Documents\GitHub\pgreport\system_tune.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Rushikesh\Documents\GitHub\pgreport\wal_buffer.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Rushikesh\Documents\GitHub\pgreport\work_mem.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.pdf" afterPath="$PROJECT_DIR$/report.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pgreport.py" afterPath="$PROJECT_DIR$/pgreport.py" />
+    <list default="true" id="907c9509-079c-4c25-8b05-d2775b85c32b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pgreport.iws" />
@@ -524,7 +508,11 @@
       <created>1395902506264</created>
       <updated>1395902506264</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="issue #9 added separate directory for source code (src), removed prints statements, changes done in driver program to remove intermediate files.">
+      <created>1395926776227</created>
+      <updated>1395926776227</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -551,6 +539,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -566,7 +555,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -590,7 +578,8 @@
     <MESSAGE value="updated header issue #2" />
     <MESSAGE value="issue #10 removed files p1.py and p2.py" />
     <MESSAGE value="issue #9 removed test.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="issue #9 removed test.txt" />
+    <MESSAGE value="issue #9 added separate directory for source code (src), removed prints statements, changes done in driver program to remove intermediate files." />
+    <option name="LAST_COMMIT_MESSAGE" value="issue #9 added separate directory for source code (src), removed prints statements, changes done in driver program to remove intermediate files." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
