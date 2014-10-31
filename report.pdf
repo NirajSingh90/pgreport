@@ -1,208 +1,243 @@
-%PDF-1.4
-1 0 obj
-<<
-/Title (report)
->>
-endobj
-2 0 obj
-<<
-/Type /Catalog
-/Pages 3 0 R
->>
-endobj
-4 0 obj
-<<
-/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font >>
->>
-endobj
-5 0 obj
-<<
-  /Font << /F1 4 0 R >>
-  /ProcSet [ /PDF /Text ]
->>
-endobj
-6 0 obj
-<<
-/Type /Page
-/Parent 3 0 R
-/Resources 5 0 R
-/Contents 7 0 R
->>
-endobj
-7 0 obj
-<<
-/Length 8 0 R
->>
-stream
-BT
-/F1 10 Tf
-1 0 0 1 50 752 Tm
-12 TL
-(----------------------------------------------------------------------)'
-(                       POSTGRESQL STATIC ANALYSER REPORT)'
-(----------------------------------------------------------------------)'
-()'
-(PostgreSQL is not available)'
-(Current Time             =  18:51:52.581223)'
-(Current Date             =  2014-03-27)'
-(TestVersion              =  alpha v1.0)'
-()'
-(----------------------------------------------------------------------)'
-(OS Configurations)'
-(----------------------------------------------------------------------)'
-()'
-(operating system name           :  Linux)'
-()'
-(kernel release                  :  3.8.0-29-generic)'
-()'
-(os instruction length           :  x86_64)'
-()'
-(Processor type                  :  x86_64)'
-()'
-(----------------------------------------------------------------------)'
-(Memory Info            All values in KB)'
-(----------------------------------------------------------------------)'
-()'
-(Free RAM                        :  652596)'
-(Total OS Cached                 :  1887060)'
-(Cached Mem                      :  378524)'
-(Total RAM+SWAP                  :  2125104)'
-(Free SWAP                       :  1472508)'
-(Total SWAP                      :  1472508)'
-(Total RAM                       :  1436572)'
-(Buffers                         :  36028)'
-(----------------------------------------------------------------------)'
-(kernel resources)'
-(----------------------------------------------------------------------)'
-()'
-(SEMMNS                          :  32000)'
-(SHMSEG                          :  4096)'
-(SHMMIN                          :  1)'
-(SEMVMX                          :  32767)'
-(SHMMAX                          :  8388608)'
-(SEMMNI                          :  128)'
-(SHMALL                          :  8388608)'
-(----------------------------------------------------------------------)'
-(CPU info)'
-(----------------------------------------------------------------------)'
-()'
-(number of cpu                   :  1)'
-(cpu speed                       :  2452.716)'
-(cpu avg                         :  2452.716)'
-(----------------------------------------------------------------------)'
-(RAID info)'
-(----------------------------------------------------------------------)'
-()'
-(SW RAID numbers of disks        :  0)'
-(RAID levels supported by kernel  :  ['linear', 'multipath', 'raid0', 'raid1', 'r)'
-(aid6', 'raid5', 'raid4', 'raid10'])'
-(----------------------------------------------------------------------)'
-(Disks and partitions)'
-ET
-endstream
-endobj
-8 0 obj
-2555
-endobj
-9 0 obj
-<<
-/Type /Page
-/Parent 3 0 R
-/Resources 5 0 R
-/Contents 10 0 R
->>
-endobj
-10 0 obj
-<<
-/Length 11 0 R
->>
-stream
-BT
-/F1 10 Tf
-1 0 0 1 50 752 Tm
-12 TL
-(----------------------------------------------------------------------)'
-()'
-(/dev/sda5         :  1472512   :  Linux            :  NONE)'
-(/dev/sda1         :  13828095  :  Linux            :  Installation Part)'
-(/dev/sda2         :  1472513   :  Extended         :  NONE)'
-(/dev/sda          :  8589MB    :  Disk             :  NONE)'
-(----------------------------------------------------------------------)'
-(File System information)'
-(----------------------------------------------------------------------)'
-()'
-(BE_IMP                          :  vboxsf)'
-(GitHub                          :  vboxsf)'
-(/dev/sr0                        :  iso9660)'
-(/dev/sda1                       :  ext4)'
-(udev                            :  devtmpfs)'
-(----------------------------------------------------------------------)'
-(Disk Read speed)'
-(----------------------------------------------------------------------)'
-()'
-(                                :  cached reads           disk reads)'
-(/dev/sda                        :  ['5716.14 MB/sec']    ['70.24 MB/sec'])'
-()'
-(----------------------------------------------------------------------)'
-(Scheduler information)'
-(----------------------------------------------------------------------)'
-()'
-(/dev/sda                        :  noop [deadline] cfq)'
-()'
-(######################################################################)'
-()'
-(                    PostgreSQL Parameters)'
-()'
-(Memory units are in KB)'
-(shb            :   shared_buffer)'
-(wm             :   work_memory)'
-(temp           :   temp_file_limit)'
-(fsync          :   fsync)'
-(sy_c           :   synchronous_commit)'
-(wal_b          :   wal_buffers)'
-(full_pgw       :   full_page_writes)'
-(chk            :   checkpoint_segments)'
-(chkTime        :   checkpoint_timeout)'
-(chkComplete    :   checkpoint_completion_target)'
-()'
-(######################################################################)'
-()'
-()'
-()'
-()'
-()'
-()'
-()'
-()'
-()'
-()'
-()'
-()'
-()'
-()'
-()'
-ET
-endstream
-endobj
-11 0 obj
-2022
-endobj
-3 0 obj
-<<
-/Type /Pages
-/Count 2
-/MediaBox [ 0 0 612 792 ]
-/Kids [ 6 0 R 9 0 R ]
->>
-endobj
-xref
-0 12
-0000000000 65535 f 0000000009 00000 n 0000000046 00000 n 0000005159 00000 n 0000000095 00000 n 0000000203 00000 n 0000000274 00000 n 0000000354 00000 n 0000002961 00000 n 0000002981 00000 n 0000003062 00000 n 0000005138 00000 n trailer
-<<
-/Size 12
-/Root 2 0 R
-/Info 1 0 R
->>
-startxref
-5250
-%%EOF
+                                                  REPORT
+
+
+----------------------POSTGRESQL STATIC ANALYSER REPORT----------------------
+
+PostgreSQL Version       =  9.3.5
+Postgesql.conf file path =  /home/Niraj/newmaster/postgresql.confCurrent Time   
+          =  18:10:51.322279
+Current Date             =  2014-10-31
+TestVersion              =  alpha v1.0
+
+------------------------------OS CONFIGURATIONS---------------------------
+
+operating system name           :  Linux
+kernel release                  :  2.6.32-220.el6.x86_64
+os instruction length           :  x86_64
+Processor type                  :  x86_64
+
+-----------------------MEMORY INFO\(All values in KB\)------------------------
+
+Free RAM                        :  1383480
+Total OS Cached                 :  6381832
+Cached Mem                      :  218312
+Total RAM+SWAP                  :  7543856
+Free SWAP                       :  6160376
+Total SWAP                      :  6160376
+Total RAM                       :  1923968
+Buffers                         :  3144
+
+------------------------------KERNEL RESOURCES---------------------------------
+
+SEMMNS                          :  32000
+SHMSEG                          :  4096
+SHMMIN                          :  1
+SEMVMX                          :  32767
+SHMMAX                          :  17179869184
+SEMMNI                          :  128
+SHMALL                          :  17179869184
+
+-----------------------------------CPU INFO-------------------------------------
+
+
+number of cpu                   :  1
+cpu speed                       :  3159.531
+cpu avg                         :  3159.531
+
+-----------------------------------RAID INFO------------------------------------
+
+
+SW RAID numbers of disks        :  0
+RAID levels supported by kernel  :  []
+
+------------------------------DISKS AND PARTITIONS------------------------------
+
+
+Partition         :  not       :  on               :  NONE
+/dev/mapper/VolGroup-lv_root  :  36MB      :  Disk             :  NONE
+/dev/mapper/VolGroup-lv_swap  :  6308MB    :  Disk             :  NONE
+/dev/sda1         :  64        :  Linux            :  Installation Part
+/dev/sda2         :  41430016  :  Linux            :  NONE
+/dev/sda          :  42MB      :  Disk             :  NONE
+
+-----------------------------FILE SYSTEM INFORMATION----------------------------
+
+
+ext4                            :  34712328
+/dev/sda1                       :  ext4
+
+-------------------------------DISK READ SPEED--------------------------------
+
+                                :  cached reads           disk reads
+/dev/mapper/VolGroup-lv_swap    :  ['9172.80 MB/sec']    ['183.31 MB/sec']
+/dev/mapper/VolGroup-lv_root    :  ['8362.57 MB/sec']    ['108.36 MB/sec']
+/dev/sda                        :  ['8477.83 MB/sec']    ['232.95 MB/sec']
+
+------------------------------SCHEDULER INFORMATION-----------------------------
+
+
+
+
+-----------------------------POSTGRESQL PARAMETERS-----------------------------
+
+Memory units are in KB
+shb            :   shared_buffer
+wm             :   work_memory
+temp           :   temp_file_limit
+fsync          :   fsync
+sy_c           :   synchronous_commit
+wal_b          :   wal_buffers
+full_pgw       :   full_page_writes
+chk            :   checkpoint_segments
+chkTime        :   checkpoint_timeout
+chkComplete    :   checkpoint_completion_target
+
+
+
+------------------------------SHARED MEMORY-----------------------------------
+
+                                        SHARED BUFFER
+
+shb:Current_Value                       =  128 MB
+shb:Recommended_Value                   =  751.55 MB
+shb:Upper_limit                         =  8GB
+shb:Lower_Limit                         =  128 KB
+shb:Upper limit 8GB
+shb:No need to change SHMMAX value
+
+
+                                        WORK MEMORY
+
+
+wm:Default_Value                        =  1MB
+wm:Recommended_value                    =  9429 KB
+wm:Lower_Limit                          =  1MB
+
+                                        TEMP FILE LIMIT
+
+temp:Only Supported by PostgreSQL > 9.2
+
+
+------------------------------WRITE AHEAD LOG---------------------------------
+
+                                        FSYNC
+
+fync:Current_Value                      =  ON
+fync:Recommended_Value                  =  ON
+
+                                        SYNCHRONOUS COMMIT
+
+sy_c:Current_Value                      =  ON
+sy_c:Recommended_Value                  =  ON
+sy_c:Value depends directly on 'fsync'
+
+                                        WAL BUFFERS
+
+wal_b:Current_value                     =  -1
+wal_b:Recommended_value                 =  16 MB
+wal_b:Minimum_value                     =  32kB
+wal_b:For heavy load value should be in between 1MB - 16 MB
+
+                                        FULL PAGE WRITES
+
+full_pgw:Current_value                  =  ON
+full_pgw:Recommended_value              =  ON
+full_pgw:Recovers from partial page writes and Improve IO performance
+
+---------------------------------CHECKPOINTS---------------------------------
+
+                                        CHECKPOINT SEGMENT
+
+chk:default_Value                       =  3
+chk:Recommended_value                   =  46
+chk:Memory Req for Checkpoints * WAL_BUFFERS ==  769587.2
+chk:[ For bulk load  :Set 128 \(2GB\) to 256 \(4GB\)
+For OLAP load  :Set 10 \(160MB\) to 64 \(1GB\)
+]
+
+                                        CHECKPOINT TIMEOUT
+
+chkTime:Current_value                   =  5min
+chkTime:Recommended_Value               =  5 min to 10min
+chkTime: [ Checkpoint_completion_target should be in range 0.6 to 0.9 
+Increase in value in check_point_completion_target will reduce I/O load ]
+
+                                        CHECKPOINT COMPLETION TARGET
+
+chk_comp:Current_Value                  =  0.5
+chk_comp:Recommended_Value              =  0.9
+
+--------------------------------DISK RECOMMENDATION-----------------------------
+---
+
+OS installation disk partition          =  
+Remaining disks                         =  []
+PGXLOG space                            =  2 MB
+
+
+------------------------SYSTEM TUNING RECOMMENDATIONS------------------------
+
+                                        READ AHEAD VALUE
+
+Current Value                           =  256
+Recommended Value                       =  4096
+Comments                                =  
+For postgres performance improvement set value to 4096 ,for better seeks
+set it using "$sudo blockdev --getra /dev/sda"
+
+
+                                        FILE ACCESS TIME
+Current_Values For Disks
+Comments                                =  []
+
+                                        OVERCOMMIT BEHAVIOR
+
+Current Value                           =  0
+Recommended Value                       =  0
+Comments                                =  ['$syssctl vm.overcommit_memory=2']
+
+                                        SWAPINESS
+
+Current_Value                           =  60
+Recommended_Value                       =  0
+Comments                                =  ['$sysctl vm.swappiness = 0']
+
+                                        WRITE CHACHE SIZING
+
+recomm_dirty_ratio                      =  10
+
+current_dirty_ratio                     =  20
+
+recomm_dirty_background_ratio           =  20
+
+current_dirty_background_ratio          =  10
+
+
+Comments                                =  ['no need to tune', 'no need to tune'
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -12,22 +12,25 @@ except:
 print "postgresql.conf file location   :"+PostgreConf_path
 now_time = datetime.now().time()
 now_date = datetime.now().date()
-#pg_version = postgre_info.get_postgre_version()
-p0 = subprocess.Popen("python src/os_info.py",stdout=subprocess.PIPE,shell=True)
+
+#pg_version =postgre_info.get_postgre_version()
+p0 = subprocess.Popen("python src/postgre_info.py",stdout=subprocess.PIPE,shell=True)
 pg_version = p0.stdout.read()
+
+print "postgres version:-"+pg_version
 f = open("recommend.txt","w")
-f.write("-"*70)
-f.write("\n")
-f.write(" "*23+"POSTGRESQL STATIC ANALYSER REPORT\n")
-f.write("-"*70)
+f.write("-"*22)
+#f.write("\n")
+#f.write(" "*23+"POSTGRESQL STATIC ANALYSER REPORT\n")
+f.write("POSTGRESQL STATIC ANALYSER REPORT")
+f.write("-"*22)
 f.write("\n\n")
 
 flag = 0
 if pg_version!="":
     f.write("PostgreSQL Version       =  "+pg_version)
-    f.write("\n")
     f.write("Postgesql.conf file path =  "+PostgreConf_path)
-    f.write("\n")
+    #f.write("\n")
     flag = 0
 else:
     f.write("PostgreSQL is not available")
@@ -42,14 +45,13 @@ f.write("\n\n")
 
 p1 = subprocess.Popen("python src/os_info.py",stdout=subprocess.PIPE,shell=True)
 p1.wait()
-print p1.stdout.read()
 f_os = open("os.conf","r")
 f.write(f_os.read())
 f_os.close()
 f.write("\n")
 
-f.write("#"*70)
-f.write("\n\n"+" "*20+"PostgreSQL Parameters"+"\n\n")
+#f.write("#"*70)
+f.write("\n\n"+"-"*29+"POSTGRESQL PARAMETERS"+"-"*29+"\n\n")
 f.write("Memory units are in KB\n")
 f.write("shb            :   shared_buffer\n")
 f.write("wm             :   work_memory\n")
@@ -61,7 +63,7 @@ f.write("full_pgw       :   full_page_writes\n")
 f.write("chk            :   checkpoint_segments\n")
 f.write("chkTime        :   checkpoint_timeout\n")
 f.write("chkComplete    :   checkpoint_completion_target\n\n")
-f.write("#"*70)
+#f.write("#"*70)
 f.write("\n\n")
 f.close()
 
@@ -84,6 +86,7 @@ if flag == 0:
     p6 = subprocess.Popen("python src/file_loc.py %s"%PostgreConf_path,stdout=subprocess.PIPE,shell=True)
     p6.wait()
     print p6.stdout.read()
+
 
     p7 = subprocess.Popen("python src/system_tune.py %s"%PostgreConf_path,stdout=subprocess.PIPE,shell=True)
     p7.wait()

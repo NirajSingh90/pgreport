@@ -70,7 +70,7 @@ def set_chk_timeout():
 
 def recommendation_checkpoints():
     return "For bulk load  :Set 128 (2GB) to 256 (4GB)\n" \
-           "For OLAP load  :Set 10 (160MB) to 64 (1GB)\n"
+           "For OLAP load  :Set 10 (160MB) to 64 (1GB)"
 
 def recommendation_completion():
     return "Checkpoint_completion_target should be in range 0.6 to 0.9 \n" \
@@ -92,10 +92,10 @@ def get_chkcompletion():
 def checkpoint_flow():
     f_re = open("recommend.txt","a")
     f_re.write("\n\n")
-    f_re.write("-"*70+"\n")
-    f_re.write("##CHECKPOINTS\n")
-    f_re.write("-"*70+"\n\n")
-    f_re.write(">>checkpoint_segments\n\n")
+    f_re.write("-"*33+"CHECKPOINTS"+"-"*33+"\n")
+    #f_re.write("##CHECKPOINTS\n")
+    #f_re.write("-"*70+"\n\n")
+    f_re.write("\n"+" "*40+"CHECKPOINT SEGMENT\n\n")
     default_val,recommended_Chk_Value,ram_req = set_chkSeg()
     f_re.write("chk:default_Value".ljust(ljust_val)+"=".ljust(kd)+str(default_val))
     f_re.write("\n")
@@ -103,21 +103,21 @@ def checkpoint_flow():
     f_re.write("\n")
     f_re.write("chk:Memory Req for Checkpoints * WAL_BUFFERS =".ljust(ljust_val)+"=".ljust(kd)+str(ram_req))
     f_re.write("\n")
-    f_re.write("#chk:[ "+recommendation_checkpoints() + "  ]")
+    f_re.write("chk:[ "+recommendation_checkpoints() + "]\n")
 
     f_re.write("\n\n")
-    f_re.write(">>checkpoint_timeout\n\n")
+    f_re.write(" "*40+"CHECKPOINT TIMEOUT\n\n")
     current_Val = get_current_chkTimeout()
     recommended_Value = set_chk_timeout()
     f_re.write("chkTime:Current_value".ljust(ljust_val)+"=".ljust(kd)+current_Val)
     f_re.write("\n")
     f_re.write("chkTime:Recommended_Value".ljust(ljust_val)+"=".ljust(kd)+recommended_Value)
     f_re.write("\n")
-    f_re.write("#chkTime: [ "+recommendation_completion()+" ]")
+    f_re.write("chkTime: [ "+recommendation_completion()+" ]")
     f_re.write("\n\n")
 
     recommended_Value = set_chk_completion_target(recommended_Chk_Value)
-    f_re.write(">>checkpoint_completion_target\n\n")
+    f_re.write(" "*40+"CHECKPOINT COMPLETION TARGET\n\n")
     current_Val = get_chkcompletion()
     f_re.write("chk_comp:Current_Value".ljust(ljust_val)+"=".ljust(kd)+current_Val)
     f_re.write("\n")

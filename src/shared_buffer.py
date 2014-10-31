@@ -10,9 +10,9 @@ def setting_shared_buffer():
     f_re = open("recommend.txt","a")
     file = f.read()
     f.close()
-    f_re.write("-"*70+"\n")
-    f_re.write("#shared_memory\n")
-    f_re.write("-"*70+"\n\n")
+    f_re.write("-"*30+"SHARED MEMORY"+"-"*35+"\n\n")
+    #f_re.write("shared_memory\n")
+    #f_re.write("-"*70+"\n\n")
     f1 = open(PostgresConfFile,"r")
     postgre_conf = f1.read()
     f1.close()
@@ -27,7 +27,7 @@ def setting_shared_buffer():
 
     recommended_ram = ""
     upper_limit = ""
-    f_re.write(">>shared_buffer")
+    f_re.write(" "*40+"SHARED BUFFER")
     f_re.write("\n\n")
 
     k = re.findall("shared_buffers\s+=\s+(\d+)MB",postgre_conf)
@@ -77,6 +77,6 @@ def setting_shared_buffer():
          comments.append("shb:Need to change SHMMAX to "+recommended_ram+"  $sysctl kern.ipc.shmmax="+recommended_ram)
     else:
         comments.append("shb:No need to change SHMMAX value")
-    f_re.writelines("#"+x+"\n" for x in comments)
+    f_re.writelines(""+x+"\n" for x in comments)
     f_re.close()
 setting_shared_buffer()

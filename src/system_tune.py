@@ -104,12 +104,12 @@ def write_cache_sizing():
 def do_proc():
     f_re = open("recommend.txt","a")
     f_re.write("\n\n")
-    f_re.write("-"*70)
-    f_re.write("\nSYSTEM TUNING RECOMMENDATIONS\n")
-    f_re.write("-"*70)
+    #f_re.write("-"*70)
+    f_re.write("-"*24+"SYSTEM TUNING RECOMMENDATIONS"+"-"*24+"\n\n")
+    #f_re.write("-"*70)
     current_val,recommended_val,comments = set_read_ahead()
-    f_re.write("\n\n")
-    f_re.write(">>READ AHEAD VALUE")
+    #f_re.write("\n\n")
+    f_re.write(" "*40+"READ AHEAD VALUE")
     f_re.write("\n\n")
     f_re.write("Current Value".ljust(ljust_val)+"=".ljust(kd)+current_val)
     f_re.write("\n")
@@ -122,7 +122,7 @@ def do_proc():
 
     current_val,comments = change_file_access_time()
     f_re.write("\n")
-    f_re.write(">>File_access_time")
+    f_re.write(" "*40+"FILE ACCESS TIME")
     f_re.write("\n")
     f_re.write("Current_Values For Disks\n")
     for k in current_val:
@@ -131,7 +131,7 @@ def do_proc():
     f_re.write("\n\n")
 
     current_val,recommended_val,comments = overcommit_behav()
-    f_re.write(">>Overcommit Behavior\n\n")
+    f_re.write(" "*40+"OVERCOMMIT BEHAVIOR\n\n")
     f_re.write("Current Value".ljust(ljust_val)+"=".ljust(kd)+current_val)
     f_re.write("\n")
     f_re.write("Recommended Value".ljust(ljust_val)+"=".ljust(kd)+current_val)
@@ -140,14 +140,14 @@ def do_proc():
     f_re.write("\n\n")
 
     current_val,recommended_val,comments = find_swapineess()
-    f_re.write(">>swapiness\n\n")
+    f_re.write(" "*40+"SWAPINESS\n\n")
     f_re.write("Current_Value".ljust(ljust_val)+"=".ljust(kd)+current_val)
     f_re.write("Recommended_Value".ljust(ljust_val)+"=".ljust(kd)+recommended_val)
     f_re.write("\n")
     f_re.write("Comments".ljust(ljust_val)+"=".ljust(kd)+str(comments))
     f_re.write("\n\n")
 
-    f_re.write(">>Write_Cache_Sizing\n\n")
+    f_re.write(" "*40+"WRITE CHACHE SIZING\n\n")
     d,comments = write_cache_sizing()
     for k in d:
         f_re.write(k.ljust(ljust_val)+"=".ljust(kd)+d[k])

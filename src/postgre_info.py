@@ -7,3 +7,6 @@ def get_postgre_version():
     postgre_version = k[0]
     return postgre_version
 
+
+version=get_postgre_version()
+print version

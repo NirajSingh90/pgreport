@@ -2,8 +2,7 @@ __author__ = 'Rushikesh'
 import re
 import sys
 #setting path os postgres conf file
-PostgreConf_path = sys.argv[1]
-
+PostgreConf_path =sys.argv[1]
 ljust_val = 40
 kd = 3
 
@@ -63,7 +62,7 @@ def setting_work_mem():
             break
     f = open("recommend.txt","a")
     f.write("\n\n")
-    f.write(">>Work_memory\n")
+    f.write(" "*40+"WORK MEMORY\n")
     f.write("\n\n")
     default_val,min_val = get_default_val()
     f.write("wm:Default_Value".ljust(ljust_val)+"=".ljust(kd)+default_val)
@@ -87,7 +86,7 @@ def get_temp_file_Value():
 def set_temp_file():
     f_re = open("recommend.txt","a")
     f_re.write("\n")
-    f_re.write(">>temp_file_limit")
+    f_re.write(" "*40+"TEMP FILE LIMIT")
     f_re.write("\n\n")
     current_val = get_temp_file_Value()
     if current_val == "":

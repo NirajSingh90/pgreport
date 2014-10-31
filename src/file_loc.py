@@ -35,6 +35,7 @@ def find_free_space():
     p = subprocess.Popen("(export LANG=C; /bin/df -T -m)",stdout=subprocess.PIPE,shell=True)
     text = p.stdout.readlines()
     del text[0]
+    text[0]=text[0]+" "+text[1]
     disk_free = {}
     for line in text:
         lm = re.split('\s+',line)
@@ -87,10 +88,9 @@ def do_cal():
         for p in free_disk_part.keys():
             if k in p:
                 free_disk[k] = free_disk[k] + int(free_disk_part[p])
-
-    f_re.write("-"*70)
-    f_re.write("\nDISK RECOMMENDATION\n")
-    f_re.write("-"*70)
+    f_re.write("-"*31)
+    f_re.write("DISK RECOMMENDATION")
+    f_re.write("-"*30)
     f_re.write("\n\n")
     f_re.write("OS installation disk partition".ljust(ljust_val)+"=".ljust(kd)+os_disk)
     f_re.write("\n")
@@ -182,9 +182,9 @@ def do_cal():
                 f_re.write("\n")
 
     f_re.write("\n")
-    f_re.write("-"*70)
-    f_re.write("\nRAID RECOMMENDATIONS\n")
-    f_re.write("-"*70)
+    f_re.write("-"*32)
+    f_re.write("RAID RECOMMENDATIONS")
+    f_re.write("-"*32)
     f_re.write("\n\n")
     f_re.write(get_raid_recommendations())
     f_re.write("\n\n")

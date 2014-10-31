@@ -217,7 +217,7 @@ class pyText2Pdf:
             print 'Ignoring form feed character...'
         if self._IsoEnc:
             print 'Using ISO Latin Encoding...'
-        print 'Using font', self._font[1:], ' size =', self._ptSize
+        #print 'Using font', self._font[1:], ' size =', self._ptSize
 
 
     def writestr(self, str):
@@ -268,13 +268,13 @@ class pyText2Pdf:
             print 'Error: Could not open file to write --->', self._ofile
             sys.exit(3)
 
-        print 'Input file =>', self._ifile
+        #print 'Input file =>', self._ifile
         print 'Writing pdf file', self._ofile, '...'
         self.WriteHeader(self._ifile)
         self.WritePages()
         self.WriteRest()
 
-        print 'Wrote file', self._ofile
+       # print 'Wrote file', self._ofile
         self._ifs.close()
         self._ofs.close()
         return 0
@@ -286,46 +286,25 @@ class pyText2Pdf:
 
         t=time.localtime()
         timestr=str(time.strftime("D:%Y%m%d%H%M%S", t))
-        ws("%PDF-1.4\n")
+        #ws("PDF-1.4\n")
         self._locations[1] = self._fpos
-        ws("1 0 obj\n")
-        ws("<<\n")
         if title:
-            buf = "".join(("/Title (", title, ")\n"))
+            buf = "".join((" "*50, title.upper(), "\n\n\n"))
             ws(buf)
 
-        ws(">>\n")
-        ws("endobj\n")
 
         self._locations[2] = self._fpos
 
-        ws("2 0 obj\n")
-        ws("<<\n")
-        ws("/Type /Catalog\n")
-        ws("/Pages 3 0 R\n")
-        ws(">>\n")
-        ws("endobj\n")
 
         self._locations[4] = self._fpos
-        ws("4 0 obj\n")
-        ws("<<\n")
-        buf = "".join(("/BaseFont ", str(self._font), " /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font >>\n"))
-        ws(buf)
+       
 
         if self._IsoEnc:
             ws(ENCODING_STR)
 
-        ws(">>\n")
-        ws("endobj\n")
 
         self._locations[5] = self._fpos
 
-        ws("5 0 obj\n")
-        ws("<<\n")
-        ws("  /Font << /F1 4 0 R >>\n")
-        ws("  /ProcSet [ /PDF /Text ]\n")
-        ws(">>\n")
-        ws("endobj\n")
 
     def StartPage(self):
         """ Start a page of data """
@@ -341,40 +320,12 @@ class pyText2Pdf:
         self._pageObs.append(self._curobj)
         self._pageObs[self._pageNo] = self._curobj
 
-        buf = "".join((str(self._curobj), " 0 obj\n"))
-
-        ws(buf)
-        ws("<<\n")
-        ws("/Type /Page\n")
-        ws("/Parent 3 0 R\n")
-        ws("/Resources 5 0 R\n")
-
-        self._curobj += 1
-        buf = "".join(("/Contents ", str(self._curobj), " 0 R\n"))
-        ws(buf)
-        ws(">>\n")
-        ws("endobj\n")
 
         self._locations.append(self._fpos)
         self._locations[self._curobj] = self._fpos
 
-        buf = "".join((str(self._curobj), " 0 obj\n"))
-        ws(buf)
-        ws("<<\n")
-
-        buf = "".join(("/Length ", str(self._curobj + 1), " 0 R\n"))
-        ws(buf)
-        ws(">>\n")
-        ws("stream\n")
+        
         strmPos = self._fpos
-
-        ws("BT\n");
-        buf = "".join(("/F1 ", str(self._ptSize), " Tf\n"))
-        ws(buf)
-        buf = "".join(("1 0 0 1 50 ", str(self._pageHt - 40), " Tm\n"))
-        ws(buf)
-        buf = "".join((str(self._vertSpace), " TL\n"))
-        ws(buf)
 
         return strmPos
 
@@ -383,20 +334,12 @@ class pyText2Pdf:
 
         ws = self.writestr
 
-        ws("ET\n")
         streamEnd = self._fpos
-        ws("endstream\n")
-        ws("endobj\n")
 
         self._curobj += 1
         self._locations.append(self._fpos)
         self._locations[self._curobj] = self._fpos
 
-        buf = "".join((str(self._curobj), " 0 obj\n"))
-        ws(buf)
-        buf = "".join((str(streamEnd - streamStart), '\n'))
-        ws(buf)
-        ws('endobj\n')
 
     def WritePages(self):
         """Write pages as PDF"""
@@ -422,7 +365,7 @@ class pyText2Pdf:
                 while lineNo < self._lines and not atFF and not atEOF:
 
                     lineNo += 1
-                    ws("(")
+                   #ws("(")
                     charNo=0
 
                     while charNo < self._cols:
@@ -451,7 +394,8 @@ class pyText2Pdf:
                                     # dont print anything for a FF
                                     charNo -= 1
 
-                    ws(")'\n")
+                   
+		    ws("\n")
                     if ch == FF:
                         atFF=1
                     if lineNo == self._lines:
@@ -491,51 +435,7 @@ class pyText2Pdf:
 
     def WriteRest(self):
         """Finish the file"""
-
-        ws = self.writestr
-        self._locations[3] = self._fpos
-
-        ws("3 0 obj\n")
-        ws("<<\n")
-        ws("/Type /Pages\n")
-        buf = "".join(("/Count ", str(self._pageNo), "\n"))
-        ws(buf)
-        buf = "".join(("/MediaBox [ 0 0 ", str(self._pageWd), " ", str(self._pageHt), " ]\n"))
-        ws(buf)
-        ws("/Kids [ ")
-
-        for i in range(1, self._pageNo+1):
-            buf = "".join((str(self._pageObs[i]), " 0 R "))
-            ws(buf)
-
-        ws("]\n")
-        ws(">>\n")
-        ws("endobj\n")
-
-        xref = self._fpos
-        ws("xref\n")
-        buf = "".join(("0 ", str((self._curobj) + 1), "\n"))
-        ws(buf)
-        buf = "".join(("0000000000 65535 f ", str(LINE_END)))
-        ws(buf)
-
-        for i in range(1, self._curobj + 1):
-            val = self._locations[i]
-            buf = "".join((string.zfill(str(val), 10), " 00000 n ", str(LINE_END)))
-            ws(buf)
-
-        ws("trailer\n")
-        ws("<<\n")
-        buf = "".join(("/Size ", str(self._curobj + 1), "\n"))
-        ws(buf)
-        ws("/Root 2 0 R\n")
-        ws("/Info 1 0 R\n")
-        ws(">>\n")
-
-        ws("startxref\n")
-        buf = "".join((str(xref), "\n"))
-        ws(buf)
-        ws("%%EOF\n")
+        
 
     def ShowHelp(self):
         """Show help on this program"""
