@@ -1,4 +1,4 @@
-__author__ = 'Rushikesh'
+_author__ = 'Rushikesh'
 import subprocess
 from datetime import datetime
 import sys
@@ -9,7 +9,7 @@ try:
 except:
     PostgreConf_path = "/etc/postgresql/9.1/main/postgresql.conf"
 
-print "postgresql.conf file location   :"+PostgreConf_path
+#print "postgresql.conf file location   :"+PostgreConf_path
 now_time = datetime.now().time()
 now_date = datetime.now().date()
 
@@ -17,7 +17,7 @@ now_date = datetime.now().date()
 p0 = subprocess.Popen("python src/postgre_info.py",stdout=subprocess.PIPE,shell=True)
 pg_version = p0.stdout.read()
 
-print "postgres version:-"+pg_version
+#print "postgres version:-"+pg_version
 f = open("recommend.txt","w")
 f.write("-"*22)
 #f.write("\n")
@@ -30,7 +30,7 @@ flag = 0
 if pg_version!="":
     f.write("PostgreSQL Version       =  "+pg_version)
     f.write("Postgesql.conf file path =  "+PostgreConf_path)
-    #f.write("\n")
+    f.write("\n")
     flag = 0
 else:
     f.write("PostgreSQL is not available")

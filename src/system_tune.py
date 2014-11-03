@@ -97,7 +97,7 @@ def write_cache_sizing():
          d["recomm_dirty_ratio"] = d["current_dirty_background_ratio"]
          d["recomm_dirty_background_ratio"] = d["current_dirty_ratio"]
          comments.append("no need to tune")
-         comments.append("no need to tune")
+         #comments.append("no need to tune")
 
     return d,comments
 
@@ -147,14 +147,14 @@ def do_proc():
     f_re.write("Comments".ljust(ljust_val)+"=".ljust(kd)+str(comments))
     f_re.write("\n\n")
 
-    f_re.write(" "*40+"WRITE CHACHE SIZING\n\n")
+    f_re.write(" "*40+"WRITE CACHE SIZING\n\n")
     d,comments = write_cache_sizing()
     for k in d:
         f_re.write(k.ljust(ljust_val)+"=".ljust(kd)+d[k])
         f_re.write("\n")
     f_re.write("\n")
     f_re.write("Comments".ljust(ljust_val)+"=".ljust(kd)+str(comments))
-    f_re.write("\n")
+    #f_re.write("\n")
     f_re.close()
 
 do_proc()

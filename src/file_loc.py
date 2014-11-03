@@ -9,17 +9,15 @@ def get_disk_list():
     d = {}
     f = open("os.conf","r")
     file = f.readlines()
-    f.close()
+    #f.close()
     flag = 0
     disk_list = []
     for line in file:
-        if "Disks and partitions" in line:
+        if "DISKS AND PARTITIONS" in line:
             flag = 1
         elif flag == 1:
             flag =2
-        elif flag == 2 and "----" not in line and line != "\n":
-            if "File System information" in line:
-                break
+        elif flag == 2:
             if "Disk" in line:
                 disk_list.append(line.split(' ')[0])
     return disk_list
@@ -88,6 +86,7 @@ def do_cal():
         for p in free_disk_part.keys():
             if k in p:
                 free_disk[k] = free_disk[k] + int(free_disk_part[p])
+
     f_re.write("-"*31)
     f_re.write("DISK RECOMMENDATION")
     f_re.write("-"*30)
@@ -135,6 +134,7 @@ def do_cal():
             f_re.write("\n")
 
             sorted_free_disk.pop()
+	    print sorted_free_disk
             ls = []
             for x in sorted_free_disk:
                 ls.append(x[0])
@@ -182,9 +182,9 @@ def do_cal():
                 f_re.write("\n")
 
     f_re.write("\n")
-    f_re.write("-"*32)
+    f_re.write("-"*30)
     f_re.write("RAID RECOMMENDATIONS")
-    f_re.write("-"*32)
+    f_re.write("-"*30)
     f_re.write("\n\n")
     f_re.write(get_raid_recommendations())
     f_re.write("\n\n")

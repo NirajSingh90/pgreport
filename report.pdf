@@ -4,9 +4,9 @@
 ----------------------POSTGRESQL STATIC ANALYSER REPORT----------------------
 
 PostgreSQL Version       =  9.3.5
-Postgesql.conf file path =  /home/Niraj/newmaster/postgresql.confCurrent Time   
-          =  18:10:51.322279
-Current Date             =  2014-10-31
+Postgesql.conf file path =  /home/Niraj/newmaster/postgresql.conf
+Current Time             =  19:43:06.771554
+Current Date             =  2014-11-03
 TestVersion              =  alpha v1.0
 
 ------------------------------OS CONFIGURATIONS---------------------------
@@ -18,14 +18,14 @@ Processor type                  :  x86_64
 
 -----------------------MEMORY INFO\(All values in KB\)------------------------
 
-Free RAM                        :  1383480
-Total OS Cached                 :  6381832
-Cached Mem                      :  218312
-Total RAM+SWAP                  :  7543856
+Free RAM                        :  1047792
+Total OS Cached                 :  6498740
+Cached Mem                      :  334816
+Total RAM+SWAP                  :  7208168
 Free SWAP                       :  6160376
 Total SWAP                      :  6160376
 Total RAM                       :  1923968
-Buffers                         :  3144
+Buffers                         :  3548
 
 ------------------------------KERNEL RESOURCES---------------------------------
 
@@ -41,8 +41,8 @@ SHMALL                          :  17179869184
 
 
 number of cpu                   :  1
-cpu speed                       :  3159.531
-cpu avg                         :  3159.531
+cpu speed                       :  3160.167
+cpu avg                         :  3160.167
 
 -----------------------------------RAID INFO------------------------------------
 
@@ -69,9 +69,9 @@ ext4                            :  34712328
 -------------------------------DISK READ SPEED--------------------------------
 
                                 :  cached reads           disk reads
-/dev/mapper/VolGroup-lv_swap    :  ['9172.80 MB/sec']    ['183.31 MB/sec']
-/dev/mapper/VolGroup-lv_root    :  ['8362.57 MB/sec']    ['108.36 MB/sec']
-/dev/sda                        :  ['8477.83 MB/sec']    ['232.95 MB/sec']
+/dev/mapper/VolGroup-lv_swap    :  ['8013.25 MB/sec']    ['162.51 MB/sec']
+/dev/mapper/VolGroup-lv_root    :  ['8681.81 MB/sec']    ['102.64 MB/sec']
+/dev/sda                        :  ['8388.26 MB/sec']    ['224.77 MB/sec']
 
 ------------------------------SCHEDULER INFORMATION-----------------------------
 
@@ -110,7 +110,7 @@ shb:No need to change SHMMAX value
 
 
 wm:Default_Value                        =  1MB
-wm:Recommended_value                    =  9429 KB
+wm:Recommended_value                    =  9010 KB
 wm:Lower_Limit                          =  1MB
 
                                         TEMP FILE LIMIT
@@ -152,8 +152,8 @@ chk:default_Value                       =  3
 chk:Recommended_value                   =  46
 chk:Memory Req for Checkpoints * WAL_BUFFERS ==  769587.2
 chk:[ For bulk load  :Set 128 \(2GB\) to 256 \(4GB\)
-For OLAP load  :Set 10 \(160MB\) to 64 \(1GB\)
-]
+For OLAP load  :Set 10 \(160MB\) to 64 \(1GB\)]
+
 
                                         CHECKPOINT TIMEOUT
 
@@ -167,12 +167,27 @@ Increase in value in check_point_completion_target will reduce I/O load ]
 chk_comp:Current_Value                  =  0.5
 chk_comp:Recommended_Value              =  0.9
 
---------------------------------DISK RECOMMENDATION-----------------------------
----
+-------------------------------DISK RECOMMENDATION------------------------------
 
-OS installation disk partition          =  
-Remaining disks                         =  []
+
+OS installation disk partition          =  /dev/sda
+Remaining disks                         =  ['/dev/mapper/VolGroup-lv_root', '/de
+v/mapper/VolGroup-lv_swap']
 PGXLOG space                            =  2 MB
+Put WAL to                              =  /dev/mapper/VolGroup-lv_swap
+Put TEMP on                             =  /dev/sda
+Put DB on                               =  /dev/mapper/VolGroup-lv_root
+
+------------------------------RAID RECOMMENDATIONS------------------------------
+
+
+Function            Cache Flushes        Access Patterns        RAID LEVELS
+
+Operating System    Rare                 mix of seq and random       1     
+Database            Regularly            mix of seq and random       10    
+WAL                 Constant             Sequential                  1     
+Temp Files          Never                More random as clients inc   None  
+
 
 
 ------------------------SYSTEM TUNING RECOMMENDATIONS------------------------
@@ -202,7 +217,7 @@ Current_Value                           =  60
 Recommended_Value                       =  0
 Comments                                =  ['$sysctl vm.swappiness = 0']
 
-                                        WRITE CHACHE SIZING
+                                        WRITE CACHE SIZING
 
 recomm_dirty_ratio                      =  10
 
@@ -213,22 +228,7 @@ recomm_dirty_background_ratio           =  20
 current_dirty_background_ratio          =  10
 
 
-Comments                                =  ['no need to tune', 'no need to tune'
-]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Comments                                =  ['no need to tune']
 
 
 
