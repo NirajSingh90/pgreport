@@ -5,8 +5,8 @@
 
 PostgreSQL Version       =  9.3.5
 Postgesql.conf file path =  /home/Niraj/newmaster/postgresql.conf
-Current Time             =  16:09:15.979853
-Current Date             =  2014-11-04
+Current Time             =  14:42:29.130943
+Current Date             =  2014-11-05
 TestVersion              =  alpha v1.0
 
 ------------------------------OS CONFIGURATIONS---------------------------
@@ -18,14 +18,14 @@ Processor type                  :  x86_64
 
 -----------------------MEMORY INFO\(All values in KB\)------------------------
 
-Free RAM                        :  870192
-Total OS Cached                 :  6579520
-Cached Mem                      :  415428
-Total RAM+SWAP                  :  7030568
+Free RAM                        :  829344
+Total OS Cached                 :  6500344
+Cached Mem                      :  330940
+Total RAM+SWAP                  :  6989720
 Free SWAP                       :  6160376
 Total SWAP                      :  6160376
 Total RAM                       :  1923968
-Buffers                         :  3716
+Buffers                         :  9028
 
 ------------------------------KERNEL RESOURCES---------------------------------
 
@@ -69,12 +69,15 @@ ext4                            :  34712328
 -------------------------------DISK READ SPEED--------------------------------
 
                                 :  cached reads           disk reads
-/dev/mapper/VolGroup-lv_swap    :  ['8685.48 MB/sec']    ['166.61 MB/sec']
-/dev/mapper/VolGroup-lv_root    :  ['7931.10 MB/sec']    ['107.34 MB/sec']
-/dev/sda                        :  ['8578.85 MB/sec']    ['231.26 MB/sec']
+/dev/mapper/VolGroup-lv_swap    :  ['8673.91 MB/sec']    ['158.47 MB/sec']
+/dev/mapper/VolGroup-lv_root    :  ['8727.04 MB/sec']    ['107.75 MB/sec']
+/dev/sda                        :  ['8580.16 MB/sec']    ['69.02 MB/sec']
 
 ------------------------------SCHEDULER INFORMATION-----------------------------
 
+/dev/mapper/VolGroup-lv_swap    :  
+/dev/mapper/VolGroup-lv_root    :  
+/dev/sda                        :  noop anticipatory deadline [cfq]
 
 
 
@@ -110,7 +113,7 @@ shb:No need to change SHMMAX value
 
 
 wm:Default_Value                        =  1MB
-wm:Recommended_value                    =  8788 KB
+wm:Recommended_value                    =  8737 KB
 wm:Lower_Limit                          =  1MB
 
                                         TEMP FILE LIMIT
@@ -229,9 +232,6 @@ current_dirty_background_ratio          =  10
 
 
 Comments                                =  ['no need to tune']
-
-
-
 
 
 

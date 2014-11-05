@@ -270,15 +270,14 @@ def tune_scheduler():
     flag = 0
     disk_list = []
     for line in file:
-        if "Disks and partitions" in line:
+        if "DISKS AND PARTITIONS" in line:
             flag = 1
         elif flag == 1:
             flag =2
-        elif flag == 2 and "----" not in line and line != "\n":
-            if "File System information" in line:
-                break
+        elif flag == 2:
             if "Disk" in line:
                 disk_list.append(line.split(' ')[0])
+
 
     for disk in disk_list:
         disk_name = disk.split("/")[2]
