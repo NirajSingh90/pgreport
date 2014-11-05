@@ -5,8 +5,8 @@
 
 PostgreSQL Version       =  9.3.5
 Postgesql.conf file path =  /home/Niraj/newmaster/postgresql.conf
-Current Time             =  19:43:06.771554
-Current Date             =  2014-11-03
+Current Time             =  16:09:15.979853
+Current Date             =  2014-11-04
 TestVersion              =  alpha v1.0
 
 ------------------------------OS CONFIGURATIONS---------------------------
@@ -18,14 +18,14 @@ Processor type                  :  x86_64
 
 -----------------------MEMORY INFO\(All values in KB\)------------------------
 
-Free RAM                        :  1047792
-Total OS Cached                 :  6498740
-Cached Mem                      :  334816
-Total RAM+SWAP                  :  7208168
+Free RAM                        :  870192
+Total OS Cached                 :  6579520
+Cached Mem                      :  415428
+Total RAM+SWAP                  :  7030568
 Free SWAP                       :  6160376
 Total SWAP                      :  6160376
 Total RAM                       :  1923968
-Buffers                         :  3548
+Buffers                         :  3716
 
 ------------------------------KERNEL RESOURCES---------------------------------
 
@@ -69,9 +69,9 @@ ext4                            :  34712328
 -------------------------------DISK READ SPEED--------------------------------
 
                                 :  cached reads           disk reads
-/dev/mapper/VolGroup-lv_swap    :  ['8013.25 MB/sec']    ['162.51 MB/sec']
-/dev/mapper/VolGroup-lv_root    :  ['8681.81 MB/sec']    ['102.64 MB/sec']
-/dev/sda                        :  ['8388.26 MB/sec']    ['224.77 MB/sec']
+/dev/mapper/VolGroup-lv_swap    :  ['8685.48 MB/sec']    ['166.61 MB/sec']
+/dev/mapper/VolGroup-lv_root    :  ['7931.10 MB/sec']    ['107.34 MB/sec']
+/dev/sda                        :  ['8578.85 MB/sec']    ['231.26 MB/sec']
 
 ------------------------------SCHEDULER INFORMATION-----------------------------
 
@@ -110,7 +110,7 @@ shb:No need to change SHMMAX value
 
 
 wm:Default_Value                        =  1MB
-wm:Recommended_value                    =  9010 KB
+wm:Recommended_value                    =  8788 KB
 wm:Lower_Limit                          =  1MB
 
                                         TEMP FILE LIMIT
